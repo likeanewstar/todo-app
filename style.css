@@ -23,12 +23,15 @@ button {
 	cursor: pointer;
 }
 
-input {
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	background: #fff;
 	border: 1px solid #d8d8d8;
 }
 
-input:focus {
+input[type=text]:focus {
 	outline-width: 1px;
 }
 
