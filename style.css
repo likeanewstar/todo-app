@@ -1,22 +1,127 @@
 @charset "utf-8";
 
-* {margin: 0; padding: 0;}
-body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}
-fieldset {border: none;}
-legend {display: none;}
-button {background: none; border: none; cursor: pointer;}
-input {background: #fff; border: 1px solid #d8d8d8;}
-input:focus {outline-width: 1px;}
+* {
+	margin: 0;
+	padding: 0;
+}
 
-.wrap {display: flex; justify-content: center; padding: 15px; background: #7F7FD5;  /* fallback for old browsers */ background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ height: 100vh; overflow-y: auto; box-sizing: border-box;}
-.todo-container {position: relative; margin: auto; padding: 25px; width: 100%; max-width:500px; border-radius: 10px; background: #f9fafe; box-shadow: 0px 8px 24px rgba(0,0,0,0.15); box-sizing: border-box;}
-.todo-container h1 {font-size: 28px; font-weight: 500;}
-.todo-container p {padding: 0 0 25px; font-size: 14px; color: #999;}
-.todo-container .btn-all-clear {position: absolute; top: 25px; right: 25px; font-size: 25px;}
-.todo-container .todo-list {margin: 0 0 25px;}
-.todo-container .todo {margin: 0 0 10px; padding: 15px; background: #fff; border-left: 2px solid #708aef; box-shadow: 0px 8px 24px rgba(0,0,0,0.15); box-sizing: border-box;}
-.todo-container .todo:after {content: ''; display: block; clear: both;}
-.todo-container .todo span {float:left; max-width: calc(100% - 25px); font-weight: 500;}
-.todo-container .todo button {float: right;}
-.todo-container .todo-input input {padding: 10px; width: calc(100% - 65px); height: 40px; font-size: 18px; box-sizing: border-box; vertical-align: middle;}
-.todo-container .todo-input button {width: 65px; height: 40px; background-color: #7F7FD5; font-size: 18px; color: #fff; font-weight: 500; box-sizing: border-box; vertical-align: middle;}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+input {
+	background: #fff;
+	border: 1px solid #d8d8d8;
+}
+
+input:focus {
+	outline-width: 1px;
+}
+
+.wrap {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background: #7F7FD5;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.todo-container {
+	position: relative;
+	margin: auto;
+	padding: 25px;
+	width: 100%;
+	max-width: 500px;
+	border-radius: 10px;
+	background: #f9fafe;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+}
+
+.todo-container h1 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.todo-container p {
+	padding: 0 0 25px;
+	font-size: 14px;
+	color: #999;
+}
+
+.todo-container .btn-all-clear {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	font-size: 25px;
+}
+
+.todo-container .todo-list {
+	margin: 0 0 25px;
+}
+
+.todo-container .todo {
+	margin: 0 0 10px;
+	padding: 15px;
+	background: #fff;
+	border-left: 2px solid #708aef;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+}
+
+.todo-container .todo:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.todo-container .todo span {
+	float: left;
+	max-width: calc(100% - 25px);
+	font-weight: 500;
+}
+
+.todo-container .todo button {
+	float: right;
+}
+
+.todo-container .todo-input input {
+	padding: 10px;
+	width: calc(100% - 65px);
+	height: 40px;
+	font-size: 18px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+.todo-container .todo-input button {
+	width: 65px;
+	height: 40px;
+	background-color: #7F7FD5;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
