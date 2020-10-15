@@ -14,7 +14,8 @@ const onAdd = () => {
         return;
     }
 
-    createItem(todoText);
+    const todo = createItem(todoText);
+    todoList.append(todo);
 
     // 입력 후 input 초기화
     todoInput.value = '';
@@ -25,8 +26,7 @@ const onAdd = () => {
 const createItem = (todoText) => {
     const todo = document.createElement('div');
     todo.setAttribute('class', 'todo');
-    todoList.append(todo)
-
+    
     const todoSpan = document.createElement('span');
     todoSpan.textContent = todoText;
     todo.append(todoSpan);
@@ -37,7 +37,7 @@ const createItem = (todoText) => {
     todo.append(todoBtn);
 
     todoBtn.addEventListener('click', () => {
-        todoList.removeChild(todo);
+        todo.remove();
         setLS();
     })
 
